@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edukasi Pendidikan Olahraga SMA</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      background-color: #e3f2fd;
+      color: #222;
+    }
+
+    header {
+      background-color: #0277bd;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    nav {
+      background-color: #01579b;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #01579b;
+      border-bottom: 2px solid #0277bd;
+      padding-bottom: 5px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #0277bd;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .materi img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .kuis {
+      background: #e1f5fe;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: #0277bd;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #01579b;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .result {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Edukasi Pendidikan Olahraga SMA</h1>
+    <p>Belajar olahraga dengan mudah, sehat, dan menyenangkan!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#materi">Materi</a>
+    <a href="#kuis">Kuis</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <h2>Selamat Datang</h2>
+      <p>Website ini dibuat untuk membantu siswa SMA memahami pentingnya pendidikan jasmani dan kesehatan. 
+      Kamu bisa mempelajari berbagai topik seperti kebugaran jasmani, permainan bola besar, senam, dan renang.</p>
+      <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/running-1281267_1280.jpg" alt="Olahraga Lari">
+    </section>
+
+    <!-- MATERI -->
+    <section id="materi" class="materi">
+      <h2>Materi Pembelajaran</h2>
+
+      <h3>1. Kebugaran Jasmani</h3>
+      <p>Kebugaran jasmani adalah kemampuan tubuh untuk melakukan aktivitas sehari-hari tanpa kelelahan yang berlebihan. 
+      Komponen kebugaran jasmani antara lain kekuatan, daya tahan, kelincahan, keseimbangan, dan kecepatan.</p>
+
+      <h3>2. Permainan Bola Besar</h3>
+      <p>Permainan bola besar seperti sepak bola, voli, dan basket mengajarkan kerja sama tim, strategi, serta menjaga ketahanan fisik.</p>
+      <img src="https://cdn.pixabay.com/photo/2014/10/22/18/58/football-498580_1280.jpg" alt="Sepak bola">
+
+      <h3>3. Senam Lantai</h3>
+      <p>Senam lantai melatih kelenturan, keseimbangan, serta koordinasi tubuh. Contohnya guling depan, kayang, dan sikap lilin.</p>
+
+      <h3>4. Renang</h3>
+      <p>Renang merupakan olahraga yang baik untuk melatih seluruh otot tubuh dan sistem pernapasan. 
+      Gaya renang antara lain gaya bebas, punggung, dada, dan kupu-kupu.</p>
+    </section>
+
+    <!-- KUIS -->
+    <section id="kuis" class="kuis">
+      <h2>Kuis Edukasi Olahraga</h2>
+      <form id="quizForm">
+        <p><strong>1.</strong> Apa manfaat utama dari kebugaran jasmani?</p>
+        <label><input type="radio" name="q1" value="a">Agar cepat lelah</label><br>
+        <label><input type="radio" name="q1" value="b">Meningkatkan kemampuan fisik</label><br>
+        <label><input type="radio" name="q1" value="c">Membatasi gerakan tubuh</label><br><br>
+
+        <p><strong>2.</strong> Olahraga renang termasuk jenis olahraga?</p>
+        <label><input type="radio" name="q2" value="a">Air</label><br>
+        <label><input type="radio" name="q2" value="b">Darat</label><br>
+        <label><input type="radio" name="q2" value="c">Udara</label><br><br>
+
+        <p><strong>3.</strong> Contoh permainan bola besar adalah...</p>
+        <label><input type="radio" name="q3" value="a">Bola voli</label><br>
+        <label><input type="radio" name="q3" value="b">Bulu tangkis</label><br>
+        <label><input type="radio" name="q3" value="c">Tenis meja</label><br><br>
+
+        <button type="button" onclick="checkQuiz()">Cek Jawaban</button>
+      </form>
+      <p class="result" id="result"></p>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+      <h2>Tentang</h2>
+      <p>Website ini dibuat oleh <strong>Dini Alya</strong> sebagai media edukasi digital untuk siswa SMA. 
+      Tujuannya untuk menumbuhkan kesadaran pentingnya olahraga dan gaya hidup sehat.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web Edukasi Olahraga SMA | Dini Alya</p>
+  </footer>
+
+  <script>
+    function checkQuiz() {
+      let score = 0;
+      const answers = { q1: "b", q2: "a", q3: "a" };
+
+      for (let q in answers) {
+        const selected = document.querySelector(input[name="${q}"]:checked);
+        if (selected && selected.value === answers[q]) score++;
+      }
+
+      const result = document.getElementById("result");
+      result.textContent = Skor kamu: ${score} dari 3 pertanyaan;
+      if (score === 3) {
+        result.style.color = "green";
+      } else {
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
